@@ -52,8 +52,9 @@ var modelHeight: Double = 512
 var sdPipeline : StableDiffusionPipeline? = nil 
 
 // pipeline compute units
-let defaultComputeUnits : MLComputeUnits = .cpuAndGPU
-var currentComputeUnits : MLComputeUnits = .cpuAndGPU
+//switched from .cpuAndGpu
+let defaultComputeUnits : MLComputeUnits = .cpuAndNeuralEngine
+var currentComputeUnits : MLComputeUnits = .cpuAndNeuralEngine
 
 // upscaler model
 let defaultUpscaleModelPath = Bundle.main.path(forResource: "realesrgan512", ofType: "mlmodelc")

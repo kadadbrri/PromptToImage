@@ -98,7 +98,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="339" y="177" width="1216" height="786"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1055"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3008" height="1667"/>
             <value key="minSize" type="size" width="1213" height="779"/>
             <view key="contentView" id="lxJ-M2-vqY">
                 <rect key="frame" x="0.0" y="0.0" width="1216" height="786"/>
@@ -113,7 +113,7 @@
                                     <constraint firstAttribute="height" constant="16" id="N1B-qQ-ItT"/>
                                     <constraint firstAttribute="width" constant="287" id="fHi-Md-1FN"/>
                                 </constraints>
-                                <sliderCell key="cell" controlSize="mini" continuous="YES" state="on" alignment="left" minValue="5" maxValue="150" doubleValue="25" tickMarkPosition="above" sliderType="linear" id="QJ0-x7-T4J"/>
+                                <sliderCell key="cell" controlSize="mini" continuous="YES" alignment="left" minValue="25" maxValue="150" doubleValue="25" tickMarkPosition="above" numberOfTickMarks="6" sliderType="linear" id="QJ0-x7-T4J"/>
                                 <connections>
                                     <action selector="takeIntegerValueFrom:" target="Rwk-s3-gxa" id="UUk-Ng-nYI"/>
                                 </connections>
@@ -147,7 +147,7 @@
                                     <constraint firstAttribute="width" constant="287" id="6IJ-SD-7qc"/>
                                     <constraint firstAttribute="height" constant="16" id="9T2-l6-EOG"/>
                                 </constraints>
-                                <sliderCell key="cell" controlSize="mini" continuous="YES" state="on" alignment="left" minValue="1" maxValue="40" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="jmj-P8-F4X"/>
+                                <sliderCell key="cell" controlSize="mini" continuous="YES" state="on" alignment="left" minValue="1" maxValue="40" doubleValue="1" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="jmj-P8-F4X"/>
                                 <connections>
                                     <action selector="takeIntegerValueFrom:" target="HNi-yp-DH6" id="B7l-Or-Aa5"/>
                                 </connections>
@@ -181,7 +181,7 @@
                                     <constraint firstAttribute="width" constant="287" id="TQ4-sF-9is"/>
                                     <constraint firstAttribute="height" constant="16" id="Z4L-5h-zuw"/>
                                 </constraints>
-                                <sliderCell key="cell" controlSize="mini" continuous="YES" state="on" alignment="left" minValue="1" maxValue="2000" doubleValue="750" tickMarkPosition="above" sliderType="linear" id="e1v-9D-7hz"/>
+                                <sliderCell key="cell" controlSize="mini" continuous="YES" state="on" alignment="left" minValue="1" maxValue="2000" doubleValue="750" tickMarkPosition="above" numberOfTickMarks="11" sliderType="linear" id="e1v-9D-7hz"/>
                                 <connections>
                                     <action selector="setGSlider:" target="-2" id="ASI-tR-amg"/>
                                 </connections>
@@ -247,7 +247,7 @@
                                                 <rect key="frame" x="6" y="4" width="275" height="62"/>
                                                 <clipView key="contentView" drawsBackground="NO" id="HbP-ri-q25">
                                                     <rect key="frame" x="0.0" y="0.0" width="275" height="62"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <textView wantsLayer="YES" focusRingType="none" drawsBackground="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" grammarChecking="YES" id="98b-bd-8Mg">
                                                             <rect key="frame" x="0.0" y="0.0" width="275" height="62"/>
@@ -288,11 +288,12 @@
                                                 <rect key="frame" x="6" y="6" width="275" height="62"/>
                                                 <clipView key="contentView" drawsBackground="NO" id="peW-9b-MTb">
                                                     <rect key="frame" x="0.0" y="0.0" width="275" height="62"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <textView wantsLayer="YES" focusRingType="none" drawsBackground="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" spellingCorrection="YES" grammarChecking="YES" id="Xtm-lj-A93">
                                                             <rect key="frame" x="0.0" y="0.0" width="275" height="62"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <color key="textColor" name="placeholderTextColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             <size key="minSize" width="275" height="62"/>
                                                             <size key="maxSize" width="366" height="10000000"/>
@@ -408,7 +409,7 @@
                                     <constraint firstAttribute="height" constant="20" id="62Q-Cj-CjP"/>
                                     <constraint firstAttribute="width" constant="287" id="7Dh-Lf-184"/>
                                 </constraints>
-                                <sliderCell key="cell" controlSize="mini" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="80" tickMarkPosition="above" sliderType="linear" id="zqO-TG-ogi"/>
+                                <sliderCell key="cell" controlSize="mini" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="80" tickMarkPosition="above" numberOfTickMarks="10" sliderType="linear" id="zqO-TG-ogi"/>
                                 <connections>
                                     <action selector="setStrength:" target="-2" id="hxL-Nj-CSm"/>
                                 </connections>
@@ -553,7 +554,7 @@
                         <rect key="frame" x="317" y="10" width="148" height="727"/>
                         <clipView key="contentView" id="gNJ-zO-1nK">
                             <rect key="frame" x="0.0" y="0.0" width="148" height="727"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <tableView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" tableStyle="plain" columnReordering="NO" columnResizing="NO" autosaveColumns="NO" rowHeight="135" rowSizeStyle="automatic" viewBased="YES" floatsGroupRows="NO" id="wAw-8X-cHJ">
                                     <rect key="frame" x="0.0" y="0.0" width="148" height="727"/>
@@ -946,7 +947,7 @@ DQ
                                 <rect key="frame" x="0.0" y="0.0" width="723" height="727"/>
                                 <clipView key="contentView" focusRingType="none" drawsBackground="NO" id="tgP-dq-hyE">
                                     <rect key="frame" x="0.0" y="0.0" width="723" height="727"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <ikImageView hidden="YES" wantsLayer="YES" focusRingType="none" fixedFrame="YES" zoomFactor="0.0" autoresizes="NO" supportsDragAndDrop="NO" doubleClickOpensImageEditPanel="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQ2-Rd-Acp">
                                             <rect key="frame" x="0.0" y="-52" width="750" height="779"/>
@@ -1052,7 +1053,7 @@ DQ
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="206" width="316" height="164"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1055"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3008" height="1667"/>
             <view key="contentView" id="ozh-Ck-Cru">
                 <rect key="frame" x="0.0" y="0.0" width="316" height="164"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -1129,7 +1130,7 @@ DQ
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="206" width="350" height="179"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1055"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3008" height="1667"/>
             <view key="contentView" id="7Qp-S8-cQu">
                 <rect key="frame" x="0.0" y="0.0" width="350" height="179"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -1483,14 +1484,14 @@ DQ
                     <rect key="frame" x="57" y="288" width="359" height="69"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <clipView key="contentView" drawsBackground="NO" id="Nyt-pE-seN">
-                        <rect key="frame" x="1" y="1" width="357" height="67"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <rect key="frame" x="1" y="1" width="342" height="67"/>
+                        <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textView wantsLayer="YES" editable="NO" drawsBackground="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="Ssx-bJ-6Sk">
-                                <rect key="frame" x="0.0" y="0.0" width="357" height="67"/>
+                                <rect key="frame" x="0.0" y="0.0" width="342" height="67"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                <size key="minSize" width="357" height="67"/>
+                                <size key="minSize" width="342" height="67"/>
                                 <size key="maxSize" width="366" height="10000000"/>
                                 <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             </textView>
@@ -1509,14 +1510,14 @@ DQ
                     <rect key="frame" x="57" y="183" width="359" height="69"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <clipView key="contentView" drawsBackground="NO" id="Z80-K6-bRa">
-                        <rect key="frame" x="1" y="1" width="357" height="67"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <rect key="frame" x="1" y="1" width="342" height="67"/>
+                        <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textView wantsLayer="YES" editable="NO" drawsBackground="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="XnZ-kZ-yWB">
-                                <rect key="frame" x="0.0" y="0.0" width="357" height="67"/>
+                                <rect key="frame" x="0.0" y="0.0" width="342" height="67"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                <size key="minSize" width="357" height="67"/>
+                                <size key="minSize" width="342" height="67"/>
                                 <size key="maxSize" width="366" height="10000000"/>
                                 <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             </textView>
@@ -1578,7 +1579,7 @@ DQ
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="783" y="593" width="505" height="280"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1055"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3008" height="1667"/>
             <view key="contentView" id="mo0-5A-QS9">
                 <rect key="frame" x="0.0" y="0.0" width="505" height="280"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1741,7 +1742,7 @@ DQ
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="206" width="480" height="439"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1055"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3008" height="1667"/>
             <view key="contentView" id="NwN-V5-5Z0">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="439"/>
                 <autoresizingMask key="autoresizingMask"/>
